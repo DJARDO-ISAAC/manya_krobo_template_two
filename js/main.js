@@ -55,6 +55,7 @@
     if (!menuBtn) return
     menuBtn.setAttribute('aria-expanded', String(open))
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+    if (open) { var hd = $('[data-header]'); if (hd) menu.style.top = Math.max(0, hd.getBoundingClientRect().bottom) + 'px' }
     menu.classList.toggle('is-open', open)
     document.documentElement.style.overflow = open ? 'hidden' : ''
   }
