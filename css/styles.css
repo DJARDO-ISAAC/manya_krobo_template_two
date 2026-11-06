@@ -4,3 +4,6 @@
 /* backdrop-filter on the header made it the containing block for the fixed mobile menu, clipping it; apply the blur on a pseudo-element instead */
 .site-header{-webkit-backdrop-filter:none;backdrop-filter:none;background:transparent}
 .site-header:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:#fffffff5;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.footer-logo{display:inline-block;background:#fff;border-radius:16px;padding:10px 16px}
+.footer-logo img{display:block;height:64px;width:auto;max-width:100%}
+.footer a.footer-logo:hover{text-decoration:none}
